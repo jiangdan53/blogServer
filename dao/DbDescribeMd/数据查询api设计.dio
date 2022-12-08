@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="41YyzY1r_T9QpWL1WXTl" name="第 1 页">
+        <mxGraphModel dx="564" dy="500" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFF99" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="6" value="" style="edgeStyle=none;html=1;fillColor=#0050ef;strokeColor=#001DBC;curved=1;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;rounded=0;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="blogClass" style="rounded=0;whiteSpace=wrap;html=1;arcSize=50;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="4" width="133" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: consolas, &amp;quot;courier new&amp;quot;, monospace; font-size: 10px; line-height: 19px;&quot;&gt;&lt;div style=&quot;line-height: 19px; font-size: 10px;&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 10px; background-color: rgb(42, 42, 42);&quot;&gt;id:1&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 10px; background-color: rgb(42, 42, 42);&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 10px; background-color: rgb(42, 42, 42);&quot;&gt;得到当前子表中blogId为2的所有分类&lt;/span&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="152" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="id:2&lt;br style=&quot;font-size: 10px;&quot;&gt;得到当前子表中blogId为2的所有分类" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="283" y="152" width="107" height="59" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

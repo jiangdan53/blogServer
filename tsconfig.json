@@ -1,0 +1,16 @@
+{
+  "compilerOptions": { //编译配置对象
+    "target": "ES2016",  // 编译后的代码版本
+    "module": "CommonJS", // 配置编译目标使用的模块化标准(编译后的模块化标准) 
+    "lib": ["ES2016"], //更该默认全局环境 如果是再浏览器环境中添加一个dom环境就好了 
+    "outDir": "./utils/dist", //编译后的文件存放地 如果没有此项 那么编译后的文件会再同一文件夹下 新增一个同名不同后缀的文件 
+    "strictNullChecks":true,//严格校验我们的非空判断 这样我们就能再接收参数的是正确的类型
+    "removeComments": true, // 在编译结果中移除 注释代码 
+    "noImplicitUseStrict": true,// 在编译结果中不包含"use strict" 严格模式的标志
+    "esModuleInterop": true,//当我们导入的模块是非es方式导出的模块使用兼容式处理 
+    // "noEmitOnError": true,// 当我们的代码报错时不参数编译结果
+    "moduleResolution": "node", //模块解析策略 
+    "strictPropertyInitialization":true,//添加更严格的类初始化检查
+  },
+  "include": ["./utils"],//需要编译的目录 只编译此目录内的ts文件 
+}
