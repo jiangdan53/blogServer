@@ -10,7 +10,7 @@
 // type user = { //使用同type 关键字 就可以定义一个类型别名 
 //     name:string,
 //     age:number,
-//     sex:Gender
+//     sex:Gender   
 // }
 // const obj:user ={
 //     name:'丹丹',

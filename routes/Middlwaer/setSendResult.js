@@ -8,6 +8,9 @@ exports.setData = function(data,msg,code){
 }
 exports.asyncHandul =  function(handler){
  return async (res,req,next)=>{
+    const resData = [
+        {meth:'get',path:'/api/banner'}
+    ]
     try{
         const data = await handler(res,req,next);
         if(data){

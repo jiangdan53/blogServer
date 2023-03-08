@@ -34,5 +34,9 @@ exports.getBlogOneClass = async (id)=>{
 //    console.log(awesblogClass.getblogtypes())
 }
 exports.getBlogClassAll = async ()=>{
-    return await blogClassModel.findAll()
+    return await blogClassModel.findAll({
+        include:{
+            model:blogtypeMlodel,
+        }
+    })
 }

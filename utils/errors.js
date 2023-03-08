@@ -44,7 +44,7 @@ exports.ValidationErr = class extends ServiceErr {
 // 无资源
 exports.NodtFoundErr = class extends ServiceErr {
     constructor(){
-    super('访问的资源存在',408)
+    super('访问的资源不存在',408)
     }
     }
 // 未知错误

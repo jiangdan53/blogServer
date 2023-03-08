@@ -1,0 +1,48 @@
+const {DataTypes}  = require('sequelize');
+const sequelize = require('../dbConnect');
+module.exports  = sequelize.define('seeting',{
+blogTitle:{
+    type:DataTypes.STRING,
+    allowNull:false,
+},
+email:{
+    type:DataTypes.STRING,
+    allowNull:false
+},
+havetabel:{
+    type:DataTypes.STRING,
+    allowNull:false,
+},
+webImg:{
+   type:DataTypes.STRING,
+   allowNull:false
+},
+githubName:{
+    type:DataTypes.STRING,
+    allowNull:false
+},
+githubAddress:{
+    type:DataTypes.STRING,
+    allowNull:false
+},
+qqCode:{
+type:DataTypes.STRING,
+allowNull:false
+},
+qrCode:{
+    type:DataTypes.STRING,
+    allowNull:false
+},
+wxCode:{
+    type:DataTypes.STRING,
+    allowNull:false
+},
+wximg:{
+    type:DataTypes.STRING,
+    allowNull:false
+}
+},{
+createdAt:false,
+updatedAt:false,
+deletedAt:false
+})

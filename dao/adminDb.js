@@ -10,7 +10,7 @@ return  await adminModel.findOne({
 }
 exports.updataAdminDb = async (userinfo)=>{
     return await adminModel.update({loginPwd:userinfo.loginPwd,userName:userinfo.userName},{
-        attributes:['id','loginId','userName','loginPwd'],
+        attributes:['id','loginId','userName'],
         where:{
             id:userinfo.id
         }
@@ -23,4 +23,15 @@ exports.whoamiDb = async (userId)=>{
             loginId:userId
         }
     });
+}
+exports.addAdminDb = async function(obj){
+    const x = adminModel.findOne({
+        where:{
+            loginId:obj.loginId
+        }
+    })
+    if(x){
+        return '该用户已存在'
+    }
+return await adminModel.create(obj)
 }

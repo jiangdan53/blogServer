@@ -9,14 +9,15 @@ module.exports = sequelize.define('blogs',{
         allwNull:false
     },
     description:{
-        type:DataTypes.STRING,
+        type:DataTypes.TEXT,
         allwNull:false
     },
-    articleId:{
-        type:DataTypes.INTEGER,
+    toc:{
+        type:DataTypes.TEXT,
         allwNull:false
     },
     articleClassId:{
+        //这是关联blogType的外键
         type:DataTypes.INTEGER,
         allowNull:false
     },
@@ -35,18 +36,21 @@ module.exports = sequelize.define('blogs',{
             let val = new Date(+this.getDataValue('createDate')).toLocaleString() === 'Invalid Date' ? new Date(Date.parse(this.getDataValue('createDate'))).toLocaleString() :new Date(+this.getDataValue('createDate')).toLocaleString()
             return val
         },
-        set(val){
-            this.setDataValue('createDate',Date.parse(val))
-        }
     },
     recommendNumber:{
         type:DataTypes.INTEGER,
         allowNull:false
     },
     classTotal:{
+         //这是关联blogClass的外键
         type:DataTypes.INTEGER,
         allowNull:false
-    }
+    },
+    htmlContent:{
+        type:DataTypes.TEXT,
+
+    },
+
 },{
     freezeTableName : true,
     createdAt: false,

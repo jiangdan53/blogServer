@@ -4,7 +4,11 @@ module.exports = sequelize.define('blogClass',{
     blogName:{
         type:DataTypes.STRING,
         allwNull:false
-    }
+    },
+    order:{
+        type:DataTypes.INTEGER,
+        allwNull:false
+    },
 },{
     freezeTableName : true,
     createdAt: false,

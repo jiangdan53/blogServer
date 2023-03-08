@@ -58,7 +58,7 @@ route.post('/uploadInfo',asyncHandul( async (res,req,next)=>{
             id:it.id,
             Img:it.Img,
             Title:it.Title,
-            Description:it.Description,
+            Description:it.Description, 
             motto:it.motto
         }
     })
